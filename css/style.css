@@ -1,0 +1,392 @@
+/* COLORS */
+:root {
+  --base-color-primary: #2B3364;
+  --base-color-secondary: #2B2A30;
+  --base-color-yellow: #F1942D;
+
+  --text-color-primary: #ffffff;
+  --text-color-secondary: #2B3364;
+
+  --font-sm: 1rem;
+  /*16*/
+  --font-md: 1.125rem;
+  /*18*/
+  --font-lg: 2rem;
+  /*32*/
+  --font-xl: 4.5rem;
+  /*72*/
+  /* USEAGE */
+  /* var(--var_name) */
+}
+
+/* font css */
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-Bold.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesque-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-Regular.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesque-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-Light.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesque-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../fonts/GalanoGrotesque-SemiBold.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesque-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+  font-family: 'Galano Grotesque';
+}
+
+/* header css start */
+#header .navbar-menu {
+  margin-left: auto;
+}
+
+body[dir="rtl"] #header .navbar-menu {
+  margin-left: 0;
+  margin-right: auto;
+
+}
+
+#header .navbar {
+  background-color: var(--base-color-primary) !important;
+}
+
+#header .nav-end-elements a {
+  text-decoration: none;
+}
+
+#header .about-us {
+
+  font-size: var(--font-md) !important;
+}
+
+#header .languageIcon {
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+}
+
+#header .nav-link,
+.language {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* banner css start */
+
+#hero .banner {
+  background-color: var(--base-color-secondary);
+}
+
+#hero .aboutUsTextLogo {
+  margin-top: 17px;
+  width: 95px;
+}
+
+#hero .banner-title {
+  color: var(--text-color-primary);
+  font-size: var(--font-xl);
+  padding-top: 100px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+
+#hero .banner-left {
+  padding-right: 5%;
+}
+
+body[dir="rtl"] #hero .banner-left {
+  padding-right: 0%;
+  padding-left: 5%;
+}
+
+#hero .banner-paragraph {
+  color: var(--text-color-primary);
+  font-size: var(--font-sm);
+  padding-bottom: 120px;
+}
+
+#hero .col-md-5 {
+  min-height: 100%;
+}
+
+
+
+/* PACKAGE START */
+#packages {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#packages .packages {
+  font-size: var(--font-xl);
+  color: var(--base-color-primary);
+}
+
+#packages .package-paragraph {
+  font-size: var(--font-sm);
+  border-bottom: 1px solid var(--base-color-primary);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: var(--base-color-primary);
+
+}
+
+#packages .package-card {
+  margin: 10px;
+  padding: 20px;
+  background-color: var(--base-color-primary);
+  border-radius: 16px;
+}
+
+#packages .package-card h4 {
+  color: var(--text-color-primary);
+}
+
+#packages .package-card p {
+  color: var(--text-color-primary);
+
+}
+
+.package-left {
+  padding-right: 5%;
+}
+
+body[dir="rtl"] .package-left {
+  padding-right: 0%;
+  padding-left: 5%;
+}
+
+#packages .package-name {
+  text-transform: uppercase;
+}
+
+/* WHAT PEOPLE SAY ABOUT US */
+#what-people-say {
+  background-color: var(--base-color-yellow);
+  padding: 80px 0;
+}
+
+#what-people-say .what-people-left {
+  padding-right: 5%;
+}
+
+body[dir="rtl"] #what-people-say .what-people-left {
+  padding-right: 0%;
+  padding-left: 5%;
+}
+
+#what-people-say .what-people-left h4 {
+  font-size: var(--font-xl);
+  color: var(--text-color-primary);
+}
+
+#what-people-say .what-people-left p {
+  font-size: var(--font-sm);
+  color: var(--text-color-primary);
+}
+
+#what-people-say .testimonial-card {
+  max-width: 400px;
+  text-align: center;
+  padding: 20px;
+  margin: 15px;
+  background-color: var(--base-color-secondary);
+  color: var(--text-color-primary);
+  border-radius: 16px;
+}
+
+#what-people-say .testimonial-card h4 {
+  font-size: var(--font-lg);
+  text-transform: uppercase;
+
+}
+
+#what-people-say .testimonial-card p {
+  font-size: var(--font-sm);
+
+}
+
+/* THIS IS US. */
+#aboutUs .aboutUsTitle {
+  background-color: #2B2A30;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  margin: 0;
+  padding: 28px 0px 28px 0px;
+}
+
+#aboutUs .aboutUsLeftside {
+  background-color: #2B3364;
+  padding: 80px 50px 60px 0;
+}
+
+body[dir="rtl"] #aboutUs .aboutUsLeftside {
+  padding: 80px 0px 60px 0;
+  padding: 80px 0px 60px 50px;
+}
+
+#aboutUs .aboutUsLeftside {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+#aboutUs .aboutUsLeftside hr {
+  color: white;
+  height: 1px;
+  margin: 30px 0px 30px 0px;
+}
+
+#aboutUs .aboutUsLeftside .aboutUsLogo {
+  width: 100px;
+}
+
+#aboutUs .aboutUsLeftside .aboutUsTextLogo {
+  margin-top: 17px;
+  width: 141px;
+}
+
+#aboutUs .aboutUsRightside {
+  padding: 80px 0px 0px 30px;
+}
+
+body[dir="rtl"] #aboutUs .aboutUsRightside {
+  padding: 80px 0px 0px 0px;
+  padding: 80px 30px 0px 0px;
+}
+
+#aboutUs .aboutUsRightside .serialNumber {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 86px;
+  color: #2B3364;
+  margin-right: 20px;
+}
+
+body[dir="rtl"] #aboutUs .aboutUsRightside .serialNumber {
+  margin-right: 0px;
+  margin-left: 20px;
+}
+
+#aboutUs .aboutUsRightside .pointText {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2B3364;
+}
+
+#aboutUs .aboutUsRightside .aboutUsPointContainer {
+  margin: 40px 0 40px 0;
+}
+
+#aboutUs .aboutUsRightside .pointText {
+  margin: 10px 0 10px 0;
+}
+
+#aboutUs .aboutUsRightside p {
+  margin: 0;
+}
+
+/* footer */
+#footer {
+  background-color: #2B2A30;
+  padding: 50px 0px 50px 0px;
+}
+
+#footer .hrOne {
+  color: white;
+  height: 1px;
+  margin: 40px 0px 30px 0px;
+}
+
+#footer .aboutUsSocialMedia p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0px;
+  margin-right: 25px;
+}
+
+#footer .aboutUsSocialMedia a {
+  margin-left: 25px;
+}
+
+body[dir="rtl"] #footer .aboutUsSocialMedia p {
+  margin: 0px;
+  margin-right: 0px;
+  margin-left: 25px;
+}
+
+body[dir="rtl"] #footer .aboutUsSocialMedia a {
+  margin-left: 0px;
+  margin-right: 25px;
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+#footer .aboutUsApplication p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 20px;
+  max-width: 420px;
+}
+
+#footer .hrTwo {
+  color: white;
+  height: 1px;
+  margin: 30px 0px 30px 0px;
+}
+
+#footer ul {
+  gap: 30px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#footer ul a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+#footer .copyRightText {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}

@@ -1,0 +1,92 @@
+/*custom left side container css*/
+@media only screen and (max-width:576px) {
+
+
+
+  #hero .banner-title {
+    text-align: center;
+    font-size: 32px;
+    padding-right: 0;
+  }
+
+  #hero .banner-paragraph {
+    text-align: center;
+  }
+
+  #packages .packages {
+    font-size: 32px;
+  }
+
+  .what-people-left h4 {
+    font-size: 32px!important;
+  }
+
+  .testimonial-card h4 {
+    font-size: 26px;
+  }
+
+  #hero .banner-left {
+    padding-right: 0;
+  }
+
+  .what-people-left {
+    padding-right: 0;
+  }
+
+  .package-left {
+    padding-right: 0;
+  }
+}
+
+
+@media only screen and (min-width:768px) {
+  .container-left {
+    margin-right: 0;
+    margin-left: calc(50vw - 375px);
+  }
+
+  body[dir="rtl"] .container-left {
+    margin-left: 0;
+    margin-right: calc(50vw - 375px);
+  }
+
+
+
+
+}
+
+@media only screen and (min-width:992px) {
+  .container-left {
+    margin-right: 0;
+    margin-left: calc(50vw - 485px);
+  }
+
+  body[dir="rtl"] .container-left {
+    margin-left: 0;
+    margin-right: calc(50vw - 485px);
+  }
+}
+
+@media only screen and (min-width:1200px) {
+  .container-left {
+    margin-right: 0;
+    margin-left: calc(50vw - 585px);
+  }
+
+  body[dir="rtl"] .container-left {
+    margin-left: 0;
+    margin-right: calc(50vw - 585px);
+  }
+}
+
+@media only screen and (min-width:1400px) {
+  .container-left {
+    margin-right: 0;
+    margin-left: calc(50vw - 650px);
+  }
+
+  body[dir="rtl"] .container-left {
+    margin-left: 0;
+    margin-right: calc(50vw - 650px);
+  }
+}
